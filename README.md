@@ -2,12 +2,12 @@
 A simple backend setup using node js and mongodb with validations and tests
 
 # Setup
-Make sure latest stable version of nodejs is installed.
+Make sure the latest stable version of nodejs is installed.
 https://nodejs.org/en/download/
 
 After cloning the project, execute 'npm install -save' command to download the packages.
 
-There is a prototype for .env file,
+There exists a prototype for .env file in the repo,
 change PORT, MONGODB_URL and MONGODB_NAME according to your own setup.
 
 To start the server, execute 'npm start' command. 
