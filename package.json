@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "cross-env nodemon app.js",
-    "test": "jest --config ./jest.config.json --verbose --maxWorkers=1",
+    "test": "jest --config ./jest.config.json --verbose --detectOpenHandles --maxWorkers=1",
     "test:watch": "npm run test -- --watchAll"
   },
   "author": "",
