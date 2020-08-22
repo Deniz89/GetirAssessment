@@ -44,7 +44,7 @@ module.exports = {
     .optional()
     .trim()
     .isInt({min: def.COUNT_MIN, max: def.COUNT_MAX})
-      .withMessage(ERR_DETAILS["minCount-not-valid"](def.COUNT_MIN, def.COUNT_MAX)).bail()
+      .withMessage(ERR_DETAILS["maxCount-not-valid"](def.COUNT_MIN, def.COUNT_MAX)).bail()
     .custom((value, {req}) => {
       const {minCount} = req.body
 
