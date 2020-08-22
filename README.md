@@ -1,5 +1,3 @@
-# Getir Assignment Project
-
 ## Description
 A simple backend setup using node js and mongodb with validations and tests
 
