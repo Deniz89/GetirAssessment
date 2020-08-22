@@ -20,7 +20,7 @@ const ERR_DETAILS = {
     "minCount should be a number between " + min + " and " + max
   ),
   "maxCount-not-valid": (min, max) => (
-    "minCount should be a number between " + min + " and " + max
+    "maxCount should be a number between " + min + " and " + max
   ),
   "maxCount-not-correct": "maxCount should be larger then minCount."
 }
