@@ -1,9 +1,9 @@
 module.exports = {
   queryBuilder: {
     fetchRecords: (params) => {
+      // Check all parameters, then create match query
       const {startDate, endDate, minCount, maxCount} = params
 
-      // prepare match statement
       let $match = {$and: []}
 
       if(startDate || endDate) {

@@ -6,7 +6,8 @@ const def = require('./definitions')
 const {ERR_DETAILS} = require('../constants')
 
 /**
- * startDate, endDate, minCount, maxCount
+ * Validate body parameters:
+ *   startDate, endDate, minCount, maxCount
  */
 
 module.exports = {
@@ -22,6 +23,7 @@ module.exports = {
     .isDate('YYYY-MM-DD').withMessage(ERR_DETAILS["endDate-not-valid"]).bail()
     .custom((value, {req}) => {
       if(req.body.startDate) {
+        // Check to see if endDate is after startDate
         if(moment(value).diff(req.body.startDate, 'days') < 0) {
           throw new Error(ERR_DETAILS["endDate-not-correct"]);
         } else {
@@ -46,6 +48,7 @@ module.exports = {
     .custom((value, {req}) => {
       const {minCount} = req.body
 
+      // Check to see if maxCoun is larger than minCount
       if(minCount) {
         if(parseInt(minCount) > parseInt(value)) {
           throw new Error(ERR_DETAILS["maxCount-not-correct"])
