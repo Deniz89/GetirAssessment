@@ -1,7 +1,11 @@
-# GetirAssignment
+# Getir Assignment Project
+
+## Description
 A simple backend setup using node js and mongodb with validations and tests
 
-# Setup
+## Setup
+Follow the step below:
+
 - Make sure the latest stable version of nodejs is installed. https://nodejs.org/en/download/
 
 - After cloning the project, execute 'npm install -save' command to download the packages.
@@ -12,7 +16,7 @@ A simple backend setup using node js and mongodb with validations and tests
 
 - To run the tests, execute 'npm run test' or 'npm run test:watch' in watch mode.
 
-# Usage
+## Usage
 To send the request:
 
 - Method: POST
